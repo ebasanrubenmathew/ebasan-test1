@@ -1,7 +1,28 @@
 {
-  "name": "node-starter",
-  "private": true,
+  "name": "joe-employment-services",
+  "version": "1.0.0",
+  "description": "Joe Employment Services LTE - OFW Employment Portal",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "ofw",
+    "employment",
+    "jobs",
+    "philippines"
+  ],
+  "author": "Joe Employment Services LTE",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.6",
+    "express": "^4.22.1",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }

@@ -1,0 +1,37 @@
+[
+    {
+        "id": "user-001",
+        "email": "juan.cruz@email.com",
+        "password": "password123",
+        "firstName": "Juan",
+        "middleName": "Santos",
+        "lastName": "Dela Cruz",
+        "dateOfBirth": "1992-05-15",
+        "gender": "male",
+        "civilStatus": "married",
+        "phone": "+63 912 345 6789",
+        "address": "123 Mabini Street, Manila, Philippines",
+        "passportNumber": "E12345678",
+        "passportIssueDate": "2022-03-10",
+        "passportExpiryDate": "2032-03-09",
+        "passportPlaceOfIssue": "DFA Manila",
+        "education": "college",
+        "course": "Bachelor of Science in Nursing",
+        "experience": "5",
+        "expectedSalary": "$1,500 - $2,000",
+        "avatar": null,
+        "role": "user",
+        "createdAt": "2026-01-01T00:00:00.000Z",
+        "status": "active"
+    },
+    {
+        "id": "user-002",
+        "email": "admin@joeemployment.com",
+        "password": "admin123",
+        "firstName": "Admin",
+        "lastName": "User",
+        "role": "admin",
+        "createdAt": "2026-01-01T00:00:00.000Z",
+        "status": "active"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "doc-001",
+        "userId": "user-001",
+        "name": "PASSPORT",
+        "type": "passport",
+        "fileUrl": "/uploads/passport.pdf",
+        "uploadedAt": "2026-01-15T00:00:00.000Z",
+        "status": "valid",
+        "expiryDate": "2032-03-09"
+    },
+    {
+        "id": "doc-002",
+        "userId": "user-001",
+        "name": "PSA Birth Certificate",
+        "type": "birth_certificate",
+        "fileUrl": "/uploads/birth_cert.pdf",
+        "uploadedAt": "2026-01-20T00:00:00.000Z",
+        "status": "verified"
+    },
+    {
+        "id": "doc-003",
+        "userId": "user-001",
+        "name": "NBI Clearance",
+        "type": "nbi_clearance",
+        "fileUrl": "/uploads/nbi_clearance.pdf",
+        "uploadedAt": "2026-02-10T00:00:00.000Z",
+        "status": "valid"
+    },
+    {
+        "id": "doc-004",
+        "userId": "user-001",
+        "name": "OWWA Membership",
+        "type": "owwa",
+        "fileUrl": "/uploads/owwa.pdf",
+        "uploadedAt": "2026-03-05T00:00:00.000Z",
+        "status": "active"
+    },
+    {
+        "id": "doc-005",
+        "userId": "user-001",
+        "name": "POLO Clearance",
+        "type": "polo_clearance",
+        "fileUrl": "/uploads/polo.pdf",
+        "uploadedAt": "2026-03-10T00:00:00.000Z",
+        "status": "verified"
+    },
+    {
+        "id": "doc-006",
+        "userId": "user-001",
+        "name": "POEA Contract",
+        "type": "poea_contract",
+        "fileUrl": "/uploads/poea_contract.pdf",
+        "uploadedAt": "2026-04-05T00:00:00.000Z",
+        "status": "approved"
+    }
+]

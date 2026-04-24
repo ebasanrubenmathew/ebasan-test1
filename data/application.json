@@ -1,0 +1,67 @@
+[
+    {
+        "id": "app-001",
+        "userId": "user-001",
+        "jobId": "job-003",
+        "jobTitle": "Hotel Manager",
+        "company": "Qatar Grand Hotel",
+        "location": "Qatar",
+        "status": "approved",
+        "createdAt": "2026-03-15T00:00:00.000Z",
+        "timeline": [
+            { "stage": "applied", "completed": true, "date": "2026-03-15T00:00:00.000Z" },
+            { "stage": "reviewed", "completed": true, "date": "2026-03-18T00:00:00.000Z" },
+            { "stage": "interview", "completed": true, "date": "2026-03-25T00:00:00.000Z" },
+            { "stage": "hired", "completed": true, "date": "2026-04-01T00:00:00.000Z" }
+        ]
+    },
+    {
+        "id": "app-002",
+        "userId": "user-001",
+        "jobId": "job-001",
+        "jobTitle": "Registered Nurse",
+        "company": "Dubai Medical Center",
+        "location": "Dubai, UAE",
+        "status": "interview",
+        "createdAt": "2026-04-10T00:00:00.000Z",
+        "interviewDate": "2026-04-28T14:00:00.000Z",
+        "timeline": [
+            { "stage": "applied", "completed": true, "date": "2026-04-10T00:00:00.000Z" },
+            { "stage": "reviewed", "completed": true, "date": "2026-04-12T00:00:00.000Z" },
+            { "stage": "interview", "completed": false, "date": "2026-04-28T14:00:00.000Z" },
+            { "stage": "hired", "completed": false, "date": null }
+        ]
+    },
+    {
+        "id": "app-003",
+        "userId": "user-001",
+        "jobId": "job-002",
+        "jobTitle": "Marine Engineer",
+        "company": "Pacific Maritime Corp",
+        "location": "Singapore",
+        "status": "pending",
+        "createdAt": "2026-04-20T00:00:00.000Z",
+        "timeline": [
+            { "stage": "applied", "completed": true, "date": "2026-04-20T00:00:00.000Z" },
+            { "stage": "reviewed", "completed": false, "date": null },
+            { "stage": "interview", "completed": false, "date": null },
+            { "stage": "hired", "completed": false, "date": null }
+        ]
+    },
+    {
+        "id": "app-004",
+        "userId": "user-001",
+        "jobId": "job-004",
+        "jobTitle": "Software Developer",
+        "company": "Saudi Tech Solutions",
+        "location": "Riyadh, Saudi Arabia",
+        "status": "pending",
+        "createdAt": "2026-04-22T00:00:00.000Z",
+        "timeline": [
+            { "stage": "applied", "completed": true, "date": "2026-04-22T00:00:00.000Z" },
+            { "stage": "reviewed", "completed": false, "date": null },
+            { "stage": "interview", "completed": false, "date": null },
+            { "stage": "hired", "completed": false, "date": null }
+        ]
+    }
+]

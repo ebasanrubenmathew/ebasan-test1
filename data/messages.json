@@ -1,0 +1,62 @@
+[
+    {
+        "id": "msg-001",
+        "userId": "user-001",
+        "contactId": "admin-001",
+        "contactName": "HR Department",
+        "direction": "received",
+        "message": "Good day, Juan! We have reviewed your application for the Hotel Manager position.",
+        "sentAt": "2026-04-24T10:30:00.000Z",
+        "read": true
+    },
+    {
+        "id": "msg-002",
+        "userId": "admin-001",
+        "contactId": "user-001",
+        "contactName": "Juan Dela Cruz",
+        "direction": "sent",
+        "message": "Good day, Juan! We have reviewed your application for the Hotel Manager position.",
+        "sentAt": "2026-04-24T10:30:00.000Z",
+        "read": true
+    },
+    {
+        "id": "msg-003",
+        "userId": "user-001",
+        "contactId": "admin-001",
+        "contactName": "HR Department",
+        "direction": "sent",
+        "message": "Thank you for the update. When can I expect to hear about the interview?",
+        "sentAt": "2026-04-24T10:45:00.000Z",
+        "read": true
+    },
+    {
+        "id": "msg-004",
+        "userId": "admin-001",
+        "contactId": "user-001",
+        "contactName": "Juan Dela Cruz",
+        "direction": "sent",
+        "message": "Thank you for the update. When can I expect to hear about the interview?",
+        "sentAt": "2026-04-24T10:45:00.000Z",
+        "read": true
+    },
+    {
+        "id": "msg-005",
+        "userId": "user-001",
+        "contactId": "admin-001",
+        "contactName": "HR Department",
+        "direction": "received",
+        "message": "Your interview has been scheduled for April 28, 2026 at 2:00 PM. Please prepare your documents and be ready for a video call.",
+        "sentAt": "2026-04-24T11:00:00.000Z",
+        "read": false
+    },
+    {
+        "id": "msg-006",
+        "userId": "admin-001",
+        "contactId": "user-001",
+        "contactName": "Juan Dela Cruz",
+        "direction": "sent",
+        "message": "Your interview has been scheduled for April 28, 2026 at 2:00 PM. Please prepare your documents and be ready for a video call.",
+        "sentAt": "2026-04-24T11:00:00.000Z",
+        "read": false
+    }
+]

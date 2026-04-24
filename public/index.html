@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Employment Services LTE - OFW Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-globe-asia"></i>
+                <span>Joe Employment</span>
+            </div>
+            <button class="close-sidebar" id="closeSidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-section="dashboard">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-item" data-section="jobs">
+                <i class="fas fa-briefcase"></i>
+                <span>Job Listings</span>
+            </a>
+            <a href="#" class="nav-item" data-section="applications">
+                <i class="fas fa-paper-plane"></i>
+                <span>My Applications</span>
+            </a>
+            <a href="#" class="nav-item" data-section="profile">
+                <i class="fas fa-user"></i>
+                <span>My Profile</span>
+            </a>
+            <a href="#" class="nav-item" data-section="documents">
+                <i class="fas fa-folder"></i>
+                <span>Documents</span>
+            </a>
+            <a href="#" class="nav-item" data-section="services">
+                <i class="fas fa-concierge-bell"></i>
+                <span>Services</span>
+            </a>
+            <a href="#" class="nav-item" data-section="messages">
+                <i class="fas fa-envelope"></i>
+                <span>Messages</span>
+                <span class="badge">3</span>
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="#" class="nav-item" id="logoutBtn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header class="top-header">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search jobs, services..." id="globalSearch">
+            </div>
+            <div class="header-actions">
+                <button class="notification-btn" id="notificationBtn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+                <div class="user-dropdown" id="userDropdown">
+                    <button class="user-btn" id="userBtn">
+                        <div class="user-avatar">JD</div>
+                        <span class="user-name">Juan Dela Cruz</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="#" data-section="profile"><i class="fas fa-user"></i> My Profile</a>
+                        <a href="#" data-section="settings"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <section class="content-section active" id="dashboard">
+                <div class="section-header">
+                    <h1>Welcome back, Juan!</h1>
+                    <p>Here's what's happening with your job search today.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #E8F5E9;">
+                            <i class="fas fa-paper-plane" style="color: #2E7D32;"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>12</h3>
+                            <p>Active Applications</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #FFF3E0;">
+                            <i class="fas fa-clock" style="color: #FF9800;"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>5</h3>
+                            <p>Pending Review</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #E3F2FD;">
+                            <i class="fas fa-calendar-check" style="color: #2196F3;"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>2</h3>
+                            <p>Upcoming Interviews</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #FCE4EC;">
+                            <i class="fas fa-check-circle" style="color: #E91E63;"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>1</h3>
+                            <p>Hired</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="card featured-jobs">
+                        <div class="card-header">
+                            <h2><i class="fas fa-star"></i> Featured Jobs</h2>
+                            <a href="#" class="view-all" data-section="jobs">View All</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="job-item">
+                                <div class="job-logo">
+                                    <i class="fas fa-hospital"></i>
+                                </div>
+                                <div class="job-details">
+                                    <h4>Registered Nurse</h4>
+                                    <p><i class="fas fa-map-marker-alt"></i> Dubai, UAE</p>
+                                    <span class="salary">$1,500 - $2,000/mo</span>
+                                </div>
+                                <button class="btn-apply">Apply Now</button>
+                            </div>
+                            <div class="job-item">
+                                <div class="job-logo">
+                                    <i class="fas fa-ship"></i>
+                                </div>
+                                <div class="job-details">
+                                    <h4>Marine Engineer</h4>
+                                    <p><i class="fas fa-map-marker-alt"></i> Singapore</p>
+                                    <span class="salary">$2,000 - $2,500/mo</span>
+                                </div>
+                                <button class="btn-apply">Apply Now</button>
+                            </div>
+                            <div class="job-item">
+                                <div class="job-logo">
+                                    <i class="fas fa-hotel"></i>
+                                </div>
+                                <div class="job-details">
+                                    <h4>Hotel Manager</h4>
+                                    <p><i class="fas fa-map-marker-alt"></i> Qatar</p>
+                                    <span class="salary">$1,800 - $2,200/mo</span>
+                                </div>
+                                <button class="btn-apply">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card recent-activity">
+                        <div class="card-header">
+                            <h2><i class="fas fa-history"></i> Recent Activity</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="activity-item">
+                                <div class="activity-icon approved">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p><strong>Application Approved</strong></p>
+                                    <span>Hotel Manager position - Qatar</span>
+                                    <small>2 hours ago</small>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon interview">
+                                    <i class="fas fa-calendar"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p><strong>Interview Scheduled</strong></p>
+                                    <span>Registered Nurse - Dubai</span>
+                                    <small>5 hours ago</small>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon pending">
+                                    <i class="fas fa-hourglass-half"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p><strong>Under Review</strong></p>
+                                    <span>Marine Engineer - Singapore</span>
+                                    <small>1 day ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="jobs">
+                <div class="section-header">
+                    <h1>Job Listings</h1>
+                    <p>Find the perfect job opportunity abroad.</p>
+                </div>
+                <div class="filters-bar">
+                    <div class="filter-group">
+                        <select id="locationFilter">
+                            <option value="">All Locations</option>
+                            <option value="uae">UAE</option>
+                            <option value="saudi">Saudi Arabia</option>
+                            <option value="qatar">Qatar</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="bahrain">Bahrain</option>
+                            <option value="kuwait">Kuwait</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <select id="jobTypeFilter">
+                            <option value="">All Job Types</option>
+                            <option value="fulltime">Full Time</option>
+                            <option value="parttime">Part Time</option>
+                            <option value="contract">Contract</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <select id="categoryFilter">
+                            <option value="">All Categories</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="hospitality">Hospitality</option>
+                            <option value="it">IT & Technology</option>
+                            <option value="construction">Construction</option>
+                        </select>
+                    </div>
+                    <div class="filter-group search-filter">
+                        <input type="text" placeholder="Search jobs..." id="jobSearch">
+                    </div>
+                </div>
+                <div class="jobs-grid" id="jobsGrid">
+                    <div class="job-card" data-location="uae" data-type="fulltime" data-category="healthcare">
+                        <div class="job-card-header">
+                            <div class="job-category">Healthcare</div>
+                            <span class="job-type fulltime">Full Time</span>
+                        </div>
+                        <h3>Registered Nurse</h3>
+                        <p class="company"><i class="fas fa-hospital"></i> Dubai Medical Center</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Dubai, UAE</p>
+                        <div class="job-salary">$1,500 - $2,000/mo</div>
+                        <ul class="job-requirements">
+                            <li><i class="fas fa-check"></i> BLS Certified</li>
+                            <li><i class="fas fa-check"></i> 2+ years experience</li>
+                            <li><i class="fas fa-check"></i> English fluency</li>
+                        </ul>
+                        <div class="job-card-footer">
+                            <small>Posted 2 days ago</small>
+                            <button class="btn-primary">Apply Now</button>
+                        </div>
+                    </div>
+                    <div class="job-card" data-location="singapore" data-type="fulltime" data-category="engineering">
+                        <div class="job-card-header">
+                            <div class="job-category">Engineering</div>
+                            <span class="job-type fulltime">Full Time</span>
+                        </div>
+                        <h3>Marine Engineer</h3>
+                        <p class="company"><i class="fas fa-ship"></i> Pacific Maritime Corp</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Singapore</p>
+                        <div class="job-salary">$2,000 - $2,500/mo</div>
+                        <ul class="job-requirements">
+                            <li><i class="fas fa-check"></i> STCW Certification</li>
+                            <li><i class="fas fa-check"></i> 3+ years experience</li>
+                            <li><i class="fas fa-check"></i> Valid seaman's book</li>
+                        </ul>
+                        <div class="job-card-footer">
+                            <small>Posted 5 days ago</small>
+                            <button class="btn-primary">Apply Now</button>
+                        </div>
+                    </div>
+                    <div class="job-card" data-location="qatar" data-type="fulltime" data-category="hospitality">
+                        <div class="job-card-header">
+                            <div class="job-category">Hospitality</div>
+                            <span class="job-type fulltime">Full Time</span>
+                        </div>
+                        <h3>Hotel Manager</h3>
+                        <p class="company"><i class="fas fa-hotel"></i> Qatar Grand Hotel</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Doha, Qatar</p>
+                        <div class="job-salary">$1,800 - $2,200/mo</div>
+                        <ul class="job-requirements">
+                            <li><i class="fas fa-check"></i> Hotel Management degree</li>
+                            <li><i class="fas fa-check"></i> 5+ years experience</li>
+                            <li><i class="fas fa-check"></i> Arabic is a plus</li>
+                        </ul>
+                        <div class="job-card-footer">
+                            <small>Posted 1 week ago</small>
+                            <button class="btn-primary">Apply Now</button>
+                        </div>
+                    </div>
+                    <div class="job-card" data-location="saudi" data-type="contract" data-category="it">
+                        <div class="job-card-header">
+                            <div class="job-category">IT & Technology</div>
+                            <span class="job-type contract">Contract</span>
+                        </div>
+                        <h3>Software Developer</h3>
+                        <p class="company"><i class="fas fa-laptop"></i> Saudi Tech Solutions</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+                        <div class="job-salary">$2,500 - $3,000/mo</div>
+                        <ul class="job-requirements">
+                            <li><i class="fas fa-check"></i> BS Computer Science</li>
+                            <li><i class="fas fa-check"></i> 3+ years experience</li>
+                            <li><i class="fas fa-check"></i> Python/JavaScript</li>
+                        </ul>
+                        <div class="job-card-footer">
+                            <small>Posted 3 days ago</small>
+                            <button class="btn-primary">Apply Now</button>
+                        </div>
+                    </div>
+                    <div class="job-card" data-location="kuwait" data-type="fulltime" data-category="construction">
+                        <div class="job-card-header">
+                            <div class="job-category">Construction</div>
+                            <span class="job-type fulltime">Full Time</span>
+                        </div>
+                        <h3>Civil Engineer</h3>
+                        <p class="company"><i class="fas fa-hard-hat"></i> Kuwait Construction Co</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Kuwait City, Kuwait</p>
+                        <div class="job-salary">$1,600 - $2,000/mo</div>
+                        <ul class="job-requirements">
+                            <li><i class="fas fa-check"></i> Licensed Civil Engineer</li>
+                            <li><i class="fas fa-check"></i> 4+ years experience</li>
+                            <li><i class="fas fa-check"></i> AutoCAD proficiency</li>
+                        </ul>
+                        <div class="job-card-footer">
+                            <small>Posted 1 week ago</small>
+                            <button class="btn-primary">Apply Now</button>
+                        </div>
+                    </div>
+                    <div class="job-card" data-location="bahrain" data-type="parttime" data-category="healthcare">
+                        <div class="job-card-header">
+                            <div class="job-category">Healthcare</div>
+                            <span class="job-type parttime">Part Time</span>
+                        </div>
+                        <h3>Physical Therapist</h3>
+                        <p class="company"><i class="fas fa-hospital"></i> Bahrain Wellness Center</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Manama, Bahrain</p>
+                        <div class="job-salary">$800 - $1,000/mo</div>
+                        <ul class="job-requirements">
+                            <li><i class="fas fa-check"></i> PT License</li>
+                            <li><i class="fas fa-check"></i> 2+ years experience</li>
+                            <li><i class="fas fa-check"></i> Arabic is a plus</li>
+                        </ul>
+                        <div class="job-card-footer">
+                            <small>Posted 4 days ago</small>
+                            <button class="btn-primary">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="applications">
+                <div class="section-header">
+                    <h1>My Applications</h1>
+                    <p>Track the status of your job applications.</p>
+                </div>
+                <div class="applications-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="pending">Pending</button>
+                    <button class="filter-btn" data-filter="interview">Interview</button>
+                    <button class="filter-btn" data-filter="approved">Approved</button>
+                    <button class="filter-btn" data-filter="rejected">Rejected</button>
+                </div>
+                <div class="applications-list" id="applicationsList">
+                    <div class="application-card" data-status="approved">
+                        <div class="application-header">
+                            <div class="app-job-info">
+                                <h4>Hotel Manager</h4>
+                                <p>Qatar Grand Hotel - Qatar</p>
+                            </div>
+                            <span class="status-badge approved">Approved</span>
+                        </div>
+                        <div class="application-body">
+                            <div class="timeline">
+                                <div class="timeline-item completed">
+                                    <i class="fas fa-check"></i>
+                                    <span>Applied</span>
+                                </div>
+                                <div class="timeline-item completed">
+                                    <i class="fas fa-check"></i>
+                                    <span>Reviewed</span>
+                                </div>
+                                <div class="timeline-item completed">
+                                    <i class="fas fa-check"></i>
+                                    <span>Interview</span>
+                                </div>
+                                <div class="timeline-item completed">
+                                    <i class="fas fa-check"></i>
+                                    <span>Hired</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="application-footer">
+                            <small>Applied: March 15, 2026</small>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                    <div class="application-card" data-status="interview">
+                        <div class="application-header">
+                            <div class="app-job-info">
+                                <h4>Registered Nurse</h4>
+                                <p>Dubai Medical Center - UAE</p>
+                            </div>
+                            <span class="status-badge interview">Interview</span>
+                        </div>
+                        <div class="application-body">
+                            <div class="timeline">
+                                <div class="timeline-item completed">
+                                    <i class="fas fa-check"></i>
+                                    <span>Applied</span>
+                                </div>
+                                <div class="timeline-item completed">
+                                    <i class="fas fa-check"></i>
+                                    <span>Reviewed</span>
+                                </div>
+                                <div class="timeline-item active">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Interview</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Hired</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="application-footer">
+                            <small>Interview: April 28, 2026</small>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                    <div class="application-card" data-status="pending">
+                        <div class="application-header">
+                            <div class="app-job-info">
+                                <h4>Marine Engineer</h4>
+                                <p>Pacific Maritime Corp - Singapore</p>
+                            </div>
+                            <span class="status-badge pending">Pending</span>
+                        </div>
+                        <div class="application-body">
+                            <div class="timeline">
+                                <div class="timeline-item completed">
+                                    <i class="fas fa-check"></i>
+                                    <span>Applied</span>
+                                </div>
+                                <div class="timeline-item active">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Reviewed</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Interview</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Hired</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="application-footer">
+                            <small>Applied: April 20, 2026</small>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                    <div class="application-card" data-status="pending">
+                        <div class="application-header">
+                            <div class="app-job-info">
+                                <h4>Software Developer</h4>
+                                <p>Saudi Tech Solutions - Saudi Arabia</p>
+                            </div>
+                            <span class="status-badge pending">Pending</span>
+                        </div>
+                        <div class="application-body">
+                            <div class="timeline">
+                                <div class="timeline-item completed">
+                                    <i class="fas fa-check"></i>
+                                    <span>Applied</span>
+                                </div>
+                                <div class="timeline-item active">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Reviewed</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Interview</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Hired</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="application-footer">
+                            <small>Applied: April 22, 2026</small>
+                            <button class="btn-outline">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="profile">
+                <div class="section-header">
+                    <h1>My Profile</h1>
+                    <p>Manage your personal information and OFW credentials.</p>
+                </div>
+                <div class="profile-form">
+                    <div class="form-card">
+                        <h3><i class="fas fa-user"></i> Personal Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" value="Juan">
+                            </div>
+                            <div class="form-group">
+                                <label>Middle Name</label>
+                                <input type="text" value="Santos">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" value="Dela Cruz">
+                            </div>
+                            <div class="form-group">
+                                <label>Date of Birth</label>
+                                <input type="date" value="1992-05-15">
+                            </div>
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <select>
+                                    <option selected>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Civil Status</label>
+                                <select>
+                                    <option>Single</option>
+                                    <option selected>Married</option>
+                                    <option>Widowed</option>
+                                    <option>Divorced</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-card">
+                        <h3><i class="fas fa-id-card"></i> Contact Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" value="juan.cruz@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" value="+63 912 345 6789">
+                            </div>
+                            <div class="form-group full-width">
+                                <label>Current Address</label>
+                                <input type="text" value="123 Mabini Street, Manila, Philippines">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-card">
+                        <h3><i class="fas fa-passport"></i> Passport Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Passport Number</label>
+                                <input type="text" value="E12345678">
+                            </div>
+                            <div class="form-group">
+                                <label>Passport Issue Date</label>
+                                <input type="date" value="2022-03-10">
+                            </div>
+                            <div class="form-group">
+                                <label>Passport Expiry Date</label>
+                                <input type="date" value="2032-03-09">
+                            </div>
+                            <div class="form-group">
+                                <label>Place of Issue</label>
+                                <input type="text" value="DFA Manila">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-card">
+                        <h3><i class="fas fa-certificate"></i> Professional Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Highest Education</label>
+                                <select>
+                                    <option>High School Graduate</option>
+                                    <option selected>College Graduate</option>
+                                    <option>Vocational</option>
+                                    <option>Master's Degree</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Course/Degree</label>
+                                <input type="text" value="Bachelor of Science in Nursing">
+                            </div>
+                            <div class="form-group">
+                                <label>Years of Experience</label>
+                                <input type="number" value="5">
+                            </div>
+                            <div class="form-group">
+                                <label>Expected Salary</label>
+                                <input type="text" value="$1,500 - $2,000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button class="btn-outline">Cancel</button>
+                        <button class="btn-primary">Save Changes</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="documents">
+                <div class="section-header">
+                    <h1>Documents</h1>
+                    <p>Upload and manage your important OFW documents.</p>
+                </div>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="document-info">
+                            <h4>PASSPORT</h4>
+                            <p>Valid until March 2032</p>
+                            <span class="document-status valid">Valid</span>
+                        </div>
+                        <div class="document-actions">
+                            <button><i class="fas fa-eye"></i></button>
+                            <button><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="document-info">
+                            <h4>PSA birth Certificate</h4>
+                            <p>Uploaded: January 2026</p>
+                            <span class="document-status valid">Verified</span>
+                        </div>
+                        <div class="document-actions">
+                            <button><i class="fas fa-eye"></i></button>
+                            <button><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="document-info">
+                            <h4>NBI Clearance</h4>
+                            <p>Uploaded: February 2026</p>
+                            <span class="document-status valid">Valid</span>
+                        </div>
+                        <div class="document-actions">
+                            <button><i class="fas fa-eye"></i></button>
+                            <button><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="document-info">
+                            <h4>OWWA Membership</h4>
+                            <p>Uploaded: March 2026</p>
+                            <span class="document-status valid">Active</span>
+                        </div>
+                        <div class="document-actions">
+                            <button><i class="fas fa-eye"></i></button>
+                            <button><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="document-info">
+                            <h4>POLO Clearance</h4>
+                            <p>Uploaded: March 2026</p>
+                            <span class="document-status valid">Verified</span>
+                        </div>
+                        <div class="document-actions">
+                            <button><i class="fas fa-eye"></i></button>
+                            <button><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="document-info">
+                            <h4>POEA Contract</h4>
+                            <p>Uploaded: April 2026</p>
+                            <span class="document-status valid">Approved</span>
+                        </div>
+                        <div class="document-actions">
+                            <button><i class="fas fa-eye"></i></button>
+                            <button><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload-section">
+                    <h3>Upload New Document</h3>
+                    <div class="upload-area" id="uploadArea">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag and drop files here or click to browse</p>
+                        <span>Supported formats: PDF, JPG, PNG (Max 5MB)</span>
+                        <input type="file" id="fileInput" hidden>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="services">
+                <div class="section-header">
+                    <h1>Services</h1>
+                    <p>Additional services for OFW overseas and at home.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-passport"></i>
+                        </div>
+                        <h3>Passport Renewal</h3>
+                        <p>Assistance with DFA passport renewal applications</p>
+                        <button class="btn-primary">Inquire Now</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <h3>Flight Booking</h3>
+                        <p>Affordable flight bookings to Middle East destinations</p>
+                        <button class="btn-primary">Book Flight</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3>Remittance</h3>
+                        <p>Fast and secure money transfer services</p>
+                        <button class="btn-primary">Send Money</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Insurance</h3>
+                        <p>OFW insurance and HMO coverage packages</p>
+                        <button class="btn-primary">Get Quote</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>24/7 Assistance</h3>
+                        <p>Emergency hotline for OFW concerns</p>
+                        <button class="btn-primary">Call Now</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Training Programs</h3>
+                        <p>Skills enhancement and certification training</p>
+                        <button class="btn-primary">Enroll</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section" id="messages">
+                <div class="section-header">
+                    <h1>Messages</h1>
+                    <p>Communication with Joe Employment Services team.</p>
+                </div>
+                <div class="messages-container">
+                    <div class="messages-list">
+                        <div class="message-item active">
+                            <div class="message-avatar">HR</div>
+                            <div class="message-content">
+                                <h4>HR Department</h4>
+                                <p>Your interview has been scheduled...</p>
+                                <small>2 hours ago</small>
+                            </div>
+                            <span class="unread-badge">2</span>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-avatar">AD</div>
+                            <div class="message-content">
+                                <h4>Applicant Division</h4>
+                                <p>Your documents have been verified...</p>
+                                <small>1 day ago</small>
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-avatar">OS</div>
+                            <div class="message-content">
+                                <h4>OFW Support</h4>
+                                <p>Welcome to Joe Employment Services...</p>
+                                <small>3 days ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messages-detail">
+                        <div class="messages-header">
+                            <div class="message-avatar large">HR</div>
+                            <div>
+                                <h4>HR Department</h4>
+                                <span>Online</span>
+                            </div>
+                        </div>
+                        <div class="messages-body">
+                            <div class="message received">
+                                <p>Good day, Juan! We have reviewed your application for the Hotel Manager position.</p>
+                                <small>10:30 AM</small>
+                            </div>
+                            <div class="message sent">
+                                <p>Thank you for the update. When can I expect to hear about the interview?</p>
+                                <small>10:45 AM</small>
+                            </div>
+                            <div class="message received">
+                                <p>Your interview has been scheduled for April 28, 2026 at 2:00 PM. Please prepare your documents and be ready for a video call.</p>
+                                <small>11:00 AM</small>
+                            </div>
+                        </div>
+                        <div class="messages-input">
+                            <button class="attach-btn"><i class="fas fa-paperclip"></i></button>
+                            <input type="text" placeholder="Type your message...">
+                            <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Joe Employment Services LTE</h4>
+                    <p>Your trusted partner for overseas employment opportunities. Serving OFWs since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Job Openings</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 OFW Building, Manila</li>
+                        <li><i class="fas fa-phone"></i> +63 2 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@joeemployment.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Joe Employment Services LTE. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal" id="applyModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Apply for Position</h3>
+                <button class="close-modal" id="closeModal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to apply for this position?</p>
+                <p class="job-title-modal"></p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-outline" id="cancelApply">Cancel</button>
+                <button class="btn-primary" id="confirmApply">Confirm Application</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Application submitted successfully!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
